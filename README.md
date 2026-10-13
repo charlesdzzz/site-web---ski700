@@ -1,6 +1,6 @@
 # SKI700 - Site E-Commerce
 
-Site e-commerce en cours de développement en HTML, CSS, PHP et MySQL, appliquant des standards de développement.
+Site e-commerce en cours de développement en HTML, CSS, PHP et MySQL, appliquant des standards de développement. Ce projet est en cours de développement en autonomie.
 
 ------------------------------------------------------------------------
 
