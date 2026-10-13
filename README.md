@@ -96,5 +96,4 @@ SKI700
 Ouvrez le fichier `bd.php` et vérifiez que les paramètres de connexion PDO correspondent à votre environnement local (par exemple : utilisateur `root`, mot de passe `root` pour MAMP, ou `""` pour XAMPP/Windows).
 
 ### Étape 3 : Lancer le site
-
- [http://localhost/](http://localhost/nomPage.php)Destrade
+Pour lancer le site avec MAMP, placez le dossier du projet dans le répertoire htdocs, puis accédez à l'adresse http://localhost/nom-du-dossier/index.php depuis votre navigateur.
