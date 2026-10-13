@@ -1,0 +1,674 @@
+*{
+	padding:0;
+	margin:0;
+}
+
+h1{
+	text-align: center;
+	font-size:50px;
+	font-family: Blippo, fantasy;
+	margin-top: 30px;
+	text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.8);
+}
+body{
+	background-image:url("../images/montagne.jpg");
+	background-repeat:no-repeat;
+	background-size:cover;
+	background-attachment:fixed;
+	color: white;
+}
+
+
+table{
+	margin-top:50px;
+	text-align: center;
+	border:solid 2px #12324A;
+	margin-left:auto;
+	margin-right:auto;
+	border-collapse:collapse;
+	background-color: rgba(0, 0, 0, 0.6);
+	box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 8px;
+	overflow:hidden;
+}
+td, th {
+    border: solid 1px rgba(255, 255, 255, 0.2); 
+    padding: 12px 20px; 
+}
+th {
+    background-color: #12324A; 
+    font-size: 1.1em;
+    text-transform: uppercase;
+}
+
+table a {
+    color: #4DB8FF;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+
+.lienc{
+	position:fixed;
+	bottom: 30px; 
+    right: 30px;
+	color: white;
+	padding: 10px 20px;
+	text-decoration:none;
+	background-color: #12324A;
+	font-weight: bold;
+	border-radius: 50px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);	
+	transition: all 0.3s ease;
+}
+.lienc:hover{
+	background-color: #4DB8FF;
+    color: #12324A; 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6); 
+    transform: translateY(-2px); 
+}
+
+.lieng{
+	position:fixed;
+	bottom: 30px; 
+    left: 30px;
+	color: white;
+	padding: 10px 20px;
+	text-decoration:none;
+	background-color: #12324A;
+	font-weight: bold;
+	border-radius: 50px;
+	box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);	
+	transition: all 0.3s ease;
+}
+
+.lieng:hover{
+	background-color: #4DB8FF;
+    color: #12324A; 
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6); 
+    transform: translateY(-2px); 
+}
+
+.fiche-produit {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 40px;
+    background-color: rgba(0, 0, 0, 0.6); 
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 800px;
+    margin: 40px auto; 
+    padding: 40px;
+}
+
+.image-produit img {
+    max-width: 300px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.details-produit {
+    text-align: left;
+}
+
+.details-produit p {
+    margin-bottom: 15px;
+    font-size: 1.1em;
+}
+
+.details-produit .prix {
+    font-size: 1.6em;
+    color: #4DB8FF; 
+    font-weight: bold;
+}
+
+.details-produit .description {
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    line-height: 1.6;
+}
+
+.badge-bienvenue {
+    background-color: #ffffff;
+    border-left: 5px solid #4DB8FF;
+    padding: 12px 20px;
+    border-radius: 6px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    margin-bottom: 15px;
+    display: inline-block;
+    font-family: sans-serif;
+}
+
+.texte-bienvenue {
+    color: #333;
+    font-size: 16px;
+}
+
+.nom-bienvenue {
+    color: #4DB8FF;
+}
+
+
+.grille-articles {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center;
+    align-items: flex-start;
+    gap: 30px;
+    margin: 40px auto;
+    max-width: 1200px;
+    padding: 0 20px;
+}
+
+.carte-article {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.7); 
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    padding: 20px;
+    width: 280px; 
+    transition: transform 0.3s ease;
+}
+
+.carte-article:hover {
+    transform: translateY(-5px); 
+}
+
+.carte-article img {
+    border-radius: 8px;
+    margin-bottom: 15px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.carte-article table {
+    margin: 0; 
+    width: 100%;
+    background-color: transparent; 
+    box-shadow: none;
+    border: none;
+}
+
+.carte-article td, .carte-article th {
+    padding: 8px 5px;
+    border: none; 
+    border-bottom: solid 1px rgba(255, 255, 255, 0.1); 
+    text-align: left;
+    font-size: 0.95em;
+    background-color: transparent;
+}
+
+.carte-article td:last-child {
+    text-align: right; 
+}
+
+.carte-article th {
+    text-transform: none; 
+    color: #4DB8FF;
+}
+
+.panier{
+	display: flex;
+    align-items: center;
+    gap: 20px;
+    margin-top: 25px;
+    background-color: rgba(0, 0, 0, 0.4); 
+    padding: 15px 25px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: fit-content; 
+}
+
+.quantite-groupe {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.1em;
+    font-weight: bold;
+}
+
+
+.input-quantite {
+    width: 60px; 
+    padding: 8px;
+    border: 2px solid #12324A;
+    border-radius: 8px;
+    background-color: white;
+    color: #12324A;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-align: center;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-quantite:focus {
+    border-color: #4DB8FF;
+}
+
+
+.btn-ajouter {
+    background-color: #4DB8FF;
+    color: #12324A;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn-ajouter:hover {
+    background-color: #12324A;
+    color: white;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+    transform: translateY(-2px);
+}
+
+/*Style de la page moi.html*/
+
+.carte-profil {
+    display: flex;
+    align-items: flex-start;
+    gap: 50px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 900px;
+    margin: 40px auto;
+    padding: 40px;
+    color: white;
+}
+
+
+.profil-gauche {
+    flex: 0 0 250px; 
+    text-align: center;
+}
+
+.profil-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%; 
+    border: 4px solid #4DB8FF; 
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 10px rgba(0,0,0,0.4);
+}
+
+.profil-contact p {
+    text-align: left;
+    margin-bottom: 10px;
+    font-size: 1.1em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    padding-bottom: 8px;
+}
+
+.profil-contact strong {
+    color: #4DB8FF;
+}
+
+.profil-droite {
+    flex: 1;
+    text-align: left;
+}
+
+.profil-titre {
+    color: #4DB8FF;
+    font-size: 1.5em;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.profil-droite p {
+    font-size: 1.1em;
+    line-height: 1.6; 
+    margin-bottom: 30px; 
+}
+
+/* Syle connexion et inscription*/
+.form-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    border: solid 1px rgba(255, 255, 255, 0.2);
+    border-radius: 12px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+    max-width: 450px;
+    margin: 50px auto;
+    padding: 40px;
+    color: white;
+}
+
+.form-container h1 {
+    font-size: 28px;
+    margin-top: 0;
+    margin-bottom: 25px;
+    text-shadow: none;
+    color: white;
+}
+
+.form-groupe {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.form-groupe label {
+    margin-bottom: 6px;
+    font-weight: bold;
+    color: #4DB8FF;
+}
+
+.form-groupe input[type="text"],
+.form-groupe input[type="email"],
+.form-groupe input[type="password"] {
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgba(255, 255, 255, 0.95);
+    color: #12324A;
+    font-size: 1em;
+    outline: none;
+    transition: box-shadow 0.3s ease;
+}
+
+.form-groupe input[type="text"]:focus,
+.form-groupe input[type="email"]:focus,
+.form-groupe input[type="password"]:focus {
+    box-shadow: 0 0 8px #4DB8FF;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: #4DB8FF;
+    color: #12324A;
+    border: none;
+    padding: 12px;
+    font-size: 1.1em;
+    font-weight: bold;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.4);
+    transition: all 0.3s ease;
+    margin-top: 20px;
+}
+
+.btn-submit:hover {
+    background-color: #12324A;
+    color: white;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.6);
+    transform: translateY(-2px);
+}
+
+/* Style de panier, commande...*/
+.boite-recapitulatif {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 30px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 500px;
+    margin: 40px auto;
+    text-align: center;
+    color: white;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.boite-recapitulatif hr {
+    border: none;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+}
+
+.boite-recapitulatif .texte-gris {
+    color: #ccc;
+    margin-bottom: 15px;
+}
+
+.boite-recapitulatif .texte-accent {
+    color: #4DB8FF;
+    font-size: 1.5em;
+    display: inline-block;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+.boite-recapitulatif .adresse-nom {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #4DB8FF;
+}
+
+.conteneur-bouton-action {
+    text-align: center;
+    margin-bottom: 50px;
+    margin-top: 30px;
+}
+
+.btn-action-principal {
+    background-color: #4DB8FF;
+    color: #12324A;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 50px;
+    font-size: 1.2em;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.4);
+    display: inline-block;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    margin-bottom: 20px;
+}
+
+.btn-action-principal:hover {
+    transform: translateY(-3px);
+    box-shadow: 0px 6px 12px rgba(0,0,0,0.6);
+    background-color: #12324A;
+    color: white;
+}
+
+.lien-retour {
+    color: white;
+    text-decoration: none;
+    font-size: 0.9em;
+    display: inline-block;
+    transition: color 0.2s ease;
+}
+
+.lien-retour:hover {
+    color: #4DB8FF;
+}
+
+/* Style connexion/nouveau */
+.message-erreur {
+    background-color: rgba(255, 77, 77, 0.2);
+    border: 1px solid #ff4d4d;
+    color: #ff4d4d;
+    padding: 10px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.inscription-container {
+    text-align: center;
+    margin-top: 25px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.inscription-container p {
+    margin-bottom: 10px;
+    color: #ccc;
+}
+
+.inscription-lien {
+    color: #4DB8FF;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.inscription-lien:hover {
+    color: white;
+}
+
+.retour-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+/* Styles pour index */
+
+.prix-article {
+    color: white;
+    font-size: 1.1em;
+}
+
+.conteneur-bienvenue {
+    position: fixed;
+    bottom: 120px;
+    right: 20px;
+    text-align: right;
+}
+
+/* boutons index */
+.lienc.btn-pos-2, .lieng.btn-pos-2 {
+    bottom: 80px;
+}
+
+.lienc.btn-pos-3, .lieng.btn-pos-3 {
+    bottom: 130px;
+}
+
+/*  */
+.message-redirection {
+    color: white;
+    text-align: center;
+    margin-top: 50px;
+}
+
+/*Styles spécifiques pour panier.php */
+
+.message-alerte-orange {
+    background-color: #ff9800;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    border-radius: 5px;
+}
+
+.message-panier-vide {
+    text-align: center;
+    font-size: 18px;
+    margin-top: 50px;
+}
+
+.prix-sous-total {
+    color: #4DB8FF;
+}
+
+.form-retirer {
+    margin: 0;
+}
+
+.btn-retirer {
+    background: none;
+    border: none;
+    color: #ff4d4d;
+    font-weight: bold;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: transform 0.2s ease;
+}
+
+.btn-retirer:hover {
+    transform: scale(1.2);
+}
+
+.boite-total {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 8px;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    max-width: 350px;
+    margin: 40px auto;
+    text-align: center;
+    font-size: 1.2em;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.prix-total {
+    color: #4DB8FF;
+    font-size: 1.6em;
+    display: inline-block;
+    margin-top: 10px;
+}
+
+/* Styles spécifiques pour commande.php et acheter.php */
+
+.recap-montant {
+    font-size: 1.2em;
+}
+
+.adresse-detail {
+    font-size: 1.1em;
+    margin-top: 5px;
+}
+
+.boite-succes {
+    margin-top: 100px;
+}
+
+.titre-succes {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.message-succes {
+    font-size: 1.2em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    color: #4DB8FF;
+    font-weight: bold;
+}
+
+.message-expedition {
+    font-size: 1em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+/* Styles spécifiques pour historique.php */
+
+.message-historique-vide {
+    text-align: center;
+    font-size: 1.2em;
+    margin-top: 50px;
+}
+
+.etat-envoye {
+    color: #4DB8FF;
+    font-weight: bold;
+}
+
+.etat-preparation {
+    color: #FFA500;
+    font-weight: bold;
+}
